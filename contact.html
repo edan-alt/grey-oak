@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Grey Oak Limited</title>
+  <meta name="description" content="Contact Grey Oak Limited — construction and engineering company in Kampala, Uganda. Call +256 772 883450 or request a quote." />
+  <meta name="theme-color" content="#0f1419" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Contact — Grey Oak Limited" />
+  <meta property="og:description" content="Reach the Grey Oak team for your construction project. Free consultation and transparent quoting." />
+  <meta property="og:type" content="website" />
+
+  <!-- Preconnect & fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ============ HEADER / NAVBAR ============ -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="index.html" class="brand" aria-label="Grey Oak Limited home">
+        <img src="images/logoimg.jpg" alt="logo" style="width: 70px; height: 40px; border-radius: 5px;">
+        <span class="brand-text">Grey Oak<span class="brand-dot">.</span></span>
+      </a>
+
+      <nav class="nav-links" id="navLinks" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="projects.html">Projects</a>
+        <a href="testimonials.html">Testimonials</a>
+        <a href="credentials.html">Credentials</a>
+        <a href="contact.html" class="active" style="color: gold;">Contact</a>
+        <a href="tel:+256772883450" class="btn btn-gold btn-sm nav-cta"><i class="fa-solid fa-phone"></i> Call Now</a>
+      </nav>
+
+      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ============ PAGE HEADER ============ -->
+  <section class="section page-header">
+    <div class="container">
+      <span class="eyebrow reveal"><span class="hairline-dot"></span> Contact</span>
+      <h1 class="reveal">Let's talk about your build.</h1>
+      <p class="lead reveal">Reach the Grey Oak team directly — we usually respond within one business day.</p>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="section" style="margin-top: -100px;">
+    <div class="container contact-grid">
+      <div class="contact-info reveal">
+        <h2>Get in touch</h2>
+        <p class="muted">Whether you're ready to start a project or just have questions, we're here to help.</p>
+        <ul class="contact-list">
+          <li><i class="fa-solid fa-location-dot"></i><div><strong>Office</strong><span>Plot 23, Ntinda Road, Kampala, Uganda</span></div></li>
+          <li><i class="fa-solid fa-phone"></i><div><strong>Phone</strong><a href="tel:+256772883450">+256 772 883450</a></div></li>
+          <li><i class="fa-solid fa-envelope"></i><div><strong>Email</strong><a href="mailto:info@greyoak.ug">info@greyoak.ug</a></div></li>
+        </ul>
+        <div class="socials">
+          <a href="https://www.facebook.com/greyoakconstruction/" target="_blank" rel="noopener" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/greyoak_ug/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+
+        <div class="map">
+          <iframe
+            title="Grey Oak Limited location"
+            src="https://www.google.com/maps?q=Ntinda%20Road%2C%20Kampala%2C%20Uganda&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            allowfullscreen></iframe>
+        </div>
+      </div>
+
+      <form class="contact-form reveal" id="contactForm" novalidate>
+        <h3>Request a quote</h3>
+        <div class="field">
+          <label for="name">Full name</label>
+          <input id="name" name="name" type="text" required placeholder="Your name" />
+        </div>
+        <div class="field">
+          <label for="phone">Phone</label>
+          <input id="phone" name="phone" type="tel" required placeholder="+256 ..." />
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="you@example.com" />
+        </div>
+        <div class="field">
+          <label for="message">Project details</label>
+          <textarea id="message" name="message" rows="5" required placeholder="Tell us about your project, location, timeline..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-gold btn-block"><i class="fa-solid fa-paper-plane"></i> Send Request</button>
+        <p class="form-status" id="formStatus" role="status"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <a href="index.html" class="brand">
+          <span class="brand-mark"><i class="fa-solid fa-cubes-stacked"></i></span>
+          <span class="brand-text">Grey Oak<span class="brand-dot">.</span></span>
+        </a>
+        <p class="muted">Reliable construction &amp; engineering solutions in Uganda. Licensed &amp; insured. License No. 170977.</p>
+      </div>
+      <div>
+        <h5>Quick Links</h5>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="testimonials.html">Testimonials</a></li>
+          <li><a href="credentials.html">Credentials</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Contact</h5>
+        <ul class="footer-links">
+          <li><i class="fa-solid fa-location-dot"></i> Plot 23, Ntinda Rd, Kampala</li>
+          <li><i class="fa-solid fa-phone"></i> <a href="tel:+256772883450">+256 772 883450</a></li>
+          <li><i class="fa-solid fa-envelope"></i> <a href="mailto:info@greyoak.ug">info@greyoak.ug</a></li>
+        </ul>
+        <div class="socials">
+          <a href="https://www.facebook.com/greyoakconstruction/" target="_blank" rel="noopener" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/greyoak_ug/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="container copyright">
+      <span>© <span id="year"></span> Grey Oak Limited. All rights reserved.</span>
+      <span>Built with care in Kampala, Uganda.</span>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top -->
+  <button class="fab-scroll-top" id="scrollTop" aria-label="Scroll to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
